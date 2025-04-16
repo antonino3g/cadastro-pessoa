@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <title>Início</title>
+</h:head>
+
+<h:body style="text-align:center; padding-top: 100px;">
+    <f:view>
+        <h:form>
+            <p:panel header="Sistema de Cadastro de Pessoas" style="width: 400px; margin: auto;">
+                <h3>Bem-vindo ao Desafio!</h3>
+                <p>Projeto é simples, atendendo o requisitos <b>por baixo dos panos</b> :)</p>
+                <p:commandButton value="🚀 Iniciar o Desafio"
+                                 action="#{facesContext.externalContext.redirect('pages/pessoa.xhtml')}"
+                                 immediate="true"
+                                 styleClass="p-button-rounded p-button-success"
+                                 style="margin-top: 20px;" />
+            </p:panel>
+        </h:form>
+    </f:view>
+</h:body>
+</html>

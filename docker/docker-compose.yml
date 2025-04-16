@@ -1,0 +1,49 @@
+services:
+  cadastro-app:
+    image: tomcat:9.0-jdk11
+    container_name: cadastro-app
+    ports:
+      - "8080:8080"
+    volumes:
+      - ../target/exploded:/usr/local/tomcat/webapps/ROOT
+    depends_on:
+      - postgres17
+
+    develop:
+      watch:
+        - action: sync
+          path: ../src/main/webapp
+          target: /usr/local/tomcat/webapps/ROOT
+        - action: rebuild
+          path: ../deploy.watch
+
+  postgres17:
+    image: postgres:17.2
+    container_name: postgres17
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: cadastrodb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  pgadmin4:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin4
+    restart: always
+    ports:
+      - "5050:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    depends_on:
+      - postgres17
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+
+volumes:
+  postgres_data:
+  pgadmin_data:
