@@ -63,6 +63,13 @@ docker compose up --build
 Funcionalidade extra que permite buscar em tempo real todos os endereços vinculados ao nome da pessoa.
 ![Image](https://github.com/user-attachments/assets/305136fd-a719-4808-8d61-1cd7b2a7ddd4)
 
+## 🧩 Melhorias previstas para próximas versões
+
+1. Substituir o preenchimento direto do formulário por um **dialog ao editar Pessoa**, melhorando a usabilidade e mantendo a interface mais limpa.
+2. Corrigir o comportamento da **edição de endereços**: atualmente, ao abrir o dialog pela primeira vez, os dados não são carregados corretamente. O problema só se resolve após alguma interação adicional com a tela, possivelmente devido ao ciclo de vida do JSF combinado com bindings ou cache da árvore de componentes.
+3. Estilar as páginas & fontes.
+
+
 ### :recycle: Como contribuir
 
 - Fork esse repositório;
