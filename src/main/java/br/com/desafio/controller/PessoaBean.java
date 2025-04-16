@@ -4,6 +4,8 @@ import br.com.desafio.model.Endereco;
 import br.com.desafio.model.Pessoa;
 import br.com.desafio.service.PessoaService;
 import javax.annotation.PostConstruct;
+import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
 import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -41,17 +43,21 @@ public class PessoaBean implements Serializable {
         }
     }
 
-    public void adicionarEndereco() {
-        if (pessoa.getEnderecos() == null) {
-            pessoa.setEnderecos(new ArrayList<>());
+    public void editar(Pessoa pessoa) {
+        this.pessoa = pessoa;
+    }
+
+    public void excluir(Pessoa pessoa) {
+        try {
+            pessoaService.excluir(pessoa.getId());
+            pessoas = pessoaService.listarTodos();
+            FacesContext.getCurrentInstance().addMessage(null,
+                    new FacesMessage(FacesMessage.SEVERITY_INFO, "Sucesso", "Pessoa excluída com sucesso."));
+        } catch (Exception e) {
+            FacesContext.getCurrentInstance().addMessage(null,
+                    new FacesMessage(FacesMessage.SEVERITY_ERROR, "Erro", "Erro ao excluir a pessoa."));
         }
-        pessoa.getEnderecos().add(new Endereco());
     }
-
-    public void removerEndereco(Endereco endereco) {
-        pessoa.getEnderecos().remove(endereco);
-    }
-
     private void carregarPessoas() {
         pessoas = pessoaService.listarTodos();
     }
