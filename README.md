@@ -18,7 +18,7 @@ O projeto está totalmente conteinerizado para facilitar a execução.
 
 ## 🚀 Como Rodar o Projeto
 
-1. Clone ou descompacte o repositório (a Bruna possui o link).
+1. Clone ou descompacte o repositório.
 2. Acesse a pasta raiz do projeto.
 3. Abra dois terminais:
 
