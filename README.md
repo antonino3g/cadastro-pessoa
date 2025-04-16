@@ -59,6 +59,10 @@ docker compose up --build
 ### 💻 Acesse o sistema no browser 
 📍 http://localhost:8080/
 
+### 🧠 Filtro Dinâmico de Endereços
+Funcionalidade extra que permite buscar em tempo real todos os endereços vinculados ao nome da pessoa.
+![Image](https://github.com/user-attachments/assets/305136fd-a719-4808-8d61-1cd7b2a7ddd4)
+
 ### :recycle: Como contribuir
 
 - Fork esse repositório;
