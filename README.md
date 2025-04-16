@@ -1,3 +1,12 @@
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/antonino3g/cadastro-pessoa">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/antonino3g/cadastro-pessoa">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/antonino3g/cadastro-pessoa">
+  <a href="https://github.com/antonino3g">
+    <img alt="Made by Antonino Praxedes" src="https://img.shields.io/badge/created%20by-Antonino%20Praxedes-blue">
+  </a>
+</p>
+
 # 🚀 Desafio Técnico – Cadastro de Pessoas
 
 Projeto simples de CRUD (**Create, Read, Update, Delete**) desenvolvido **sem frameworks**, com foco em simular cenários típicos de sistemas legados — comuns em órgãos públicos.
@@ -49,5 +58,20 @@ docker compose up --build
 
 ### 💻 Acesse o sistema no browser 
 📍 http://localhost:8080/
+
+### :recycle: Como contribuir
+
+- Fork esse repositório;
+- Crie uma branch com a sua feature: `git checkout -b my-feature`
+- Commit suas mudanças: `git commit -m 'feat: My new feature'`
+- Push a sua branch: `git push origin my-feature`
+
+
+## :memo:  License
+
+MIT License - Veja [LICENSE](https://opensource.org/licenses/MIT) para mais detalhes.
+
+---
+**Created by Antonino Praxedes!  👋🏻 [Get in touch!](https://www.linkedin.com/in/antoninopraxedes/)**
 
 
