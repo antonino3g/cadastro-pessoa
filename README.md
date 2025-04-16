@@ -29,6 +29,7 @@ mvn clean package -Pdev
 ```
 Terminal 2 – Subir os containers com Docker:
 ```bash
+cd docker
 docker compose down
 docker compose up --build
 ```
