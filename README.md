@@ -18,7 +18,7 @@ O projeto está totalmente conteinerizado para facilitar a execução.
 
 ## 🚀 Como Rodar o Projeto
 
-1. Clone ou descompacte o repositório.
+1. Clone ou descompacte o repositório. (Link do projeto .zip no [aqui](https://drive.google.com/drive/folders/1LXKPlTMoPs_Rsll0s3opP7fFyrOVvwh8?usp=sharing))
 2. Acesse a pasta raiz do projeto.
 3. Abra dois terminais:
 
