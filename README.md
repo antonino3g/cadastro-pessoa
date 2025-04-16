@@ -71,7 +71,4 @@ docker compose up --build
 
 MIT License - Veja [LICENSE](https://opensource.org/licenses/MIT) para mais detalhes.
 
----
-**Created by Antonino Praxedes!  👋🏻 [Get in touch!](https://www.linkedin.com/in/antoninopraxedes/)**
-
 
